@@ -1,6 +1,6 @@
 # TÉRRA — Presencia
 
-Primera versión de ecommerce responsive, en español, con Vite y Three.js. El catálogo está en `src/products.js`. Precios ilustrativos en ARS; no hay servidor de pedidos ni pasarela de pagos.
+Primera versión de ecommerce responsive, en español, con Vite y Three.js. El catálogo está en `src/products.js`. Precio confirmado: $15.000 ARS por Presencia 50 g. Venta exclusiva en Argentina y envíos a todo el país, con costo a confirmar según destino; no hay servidor de pedidos ni pasarela de pagos.
 
 ## Ejecutar
 
@@ -34,6 +34,6 @@ La textura está limitada por la resolución, perspectiva e iluminación de la f
 
 La bolsa se conserva en localStorage. El checkout valida datos de ejemplo en el navegador, muestra confirmación y vacía la bolsa: no envía ni conserva los datos del formulario, no crea pedidos y no solicita tarjetas.
 
-Antes de venta real: confirmar precio, origen, ingredientes, stock y políticas; conectar backend de pedidos e inventario, pasarela de pagos y logística; agregar términos y privacidad y verificar accesibilidad y compatibilidad en dispositivos reales. Agregar nuevos productos al catálogo y definir imágenes y modelos correspondientes.
+Antes de venta real: confirmar origen, ingredientes, stock y políticas; conectar backend de pedidos e inventario, pasarela de pagos y logística; agregar términos y privacidad y verificar accesibilidad y compatibilidad en dispositivos reales. Agregar nuevos productos al catálogo y definir imágenes y modelos correspondientes.
 
 Tipografías Google Fonts con alternativas locales del sistema. Fotografías tomadas de las referencias proporcionadas, sin fotografías de stock. Instagram no pudo consultarse en vivo; identidad basada en las capturas adjuntas.

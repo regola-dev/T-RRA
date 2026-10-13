@@ -9,3 +9,5 @@
 .nature{background-image:url('/assets/leaves.jpg')}
 
 .giant-logo img{width:90%;max-width:1200px;height:auto;max-height:none;object-fit:contain}
+
+.shipping-info{font-size:13px;font-weight:700;margin:22px 0 7px}.shipping-detail{font-size:10px;line-height:1.7;color:#607063;margin:0}
