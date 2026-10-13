@@ -1,0 +1,704 @@
+export const instagramImages = [
+  {
+    "id": "731093857",
+    "source": "https://www.instagram.com/desde.terra/p/DaOScwVRwf4/",
+    "originalName": "731093857_18138188989512277_8333275646059067125_n.jpg",
+    "originalSize": [
+      3072,
+      4096
+    ],
+    "size": [
+      1800,
+      2400
+    ],
+    "image": "/assets/instagram/731093857.webp",
+    "thumbnail": "/assets/instagram/731093857-small.webp",
+    "alt": "Photo by TÃ‰RRA on June 30, 2026.",
+    "cover": true,
+    "thumbnailWidth": 675
+  },
+  {
+    "id": "731131372",
+    "source": "https://www.instagram.com/desde.terra/reel/DalisEhxNsn/",
+    "originalName": "731131372_18141042889512277_8011464417079464624_n.jpg",
+    "originalSize": [
+      360,
+      640
+    ],
+    "size": [
+      1080,
+      1920
+    ],
+    "image": "/assets/instagram/731131372.webp",
+    "thumbnail": "/assets/instagram/731131372-small.webp",
+    "alt": "Video by TÃ‰RRA on July 09, 2026.",
+    "cover": true,
+    "thumbnailWidth": 506
+  },
+  {
+    "id": "731345416",
+    "source": "https://www.instagram.com/desde.terra/p/DaQ8OhnHIQu/",
+    "originalName": "731345416_18138512386512277_3655843466376551115_n.jpg",
+    "originalSize": [
+      3456,
+      3456
+    ],
+    "size": [
+      2400,
+      2400
+    ],
+    "image": "/assets/instagram/731345416.webp",
+    "thumbnail": "/assets/instagram/731345416-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "731359736",
+    "source": "https://www.instagram.com/desde.terra/p/DaQ8OhnHIQu/",
+    "originalName": "731359736_18138512398512277_5605896374773187333_n.jpg",
+    "originalSize": [
+      3456,
+      3456
+    ],
+    "size": [
+      2400,
+      2400
+    ],
+    "image": "/assets/instagram/731359736.webp",
+    "thumbnail": "/assets/instagram/731359736-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "731365666",
+    "source": "https://www.instagram.com/desde.terra/p/DaQ8OhnHIQu/",
+    "originalName": "731365666_18138512407512277_8450050544221747668_n.jpg",
+    "originalSize": [
+      3456,
+      3456
+    ],
+    "size": [
+      2400,
+      2400
+    ],
+    "image": "/assets/instagram/731365666.webp",
+    "thumbnail": "/assets/instagram/731365666-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "731369816",
+    "source": "https://www.instagram.com/desde.terra/p/DaLlMoUx9Hd/",
+    "originalName": "731369816_18137852272512277_1820617746312438141_n.jpg",
+    "originalSize": [
+      1280,
+      1280
+    ],
+    "size": [
+      2400,
+      2400
+    ],
+    "image": "/assets/instagram/731369816.webp",
+    "thumbnail": "/assets/instagram/731369816-small.webp",
+    "alt": "Photo by TÃ‰RRA on June 29, 2026.",
+    "cover": true,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "731397557",
+    "source": "https://www.instagram.com/desde.terra/p/DaQ8OhnHIQu/",
+    "originalName": "731397557_18138512359512277_7646411351749630813_n.jpg",
+    "originalSize": [
+      3456,
+      3455
+    ],
+    "size": [
+      2400,
+      2399
+    ],
+    "image": "/assets/instagram/731397557.webp",
+    "thumbnail": "/assets/instagram/731397557-small.webp",
+    "alt": "Photo by TÃ‰RRA on July 01, 2026.",
+    "cover": true,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "731573234",
+    "source": "https://www.instagram.com/desde.terra/p/DaQ8OhnHIQu/",
+    "originalName": "731573234_18138512377512277_5603338986897268984_n.jpg",
+    "originalSize": [
+      3456,
+      3456
+    ],
+    "size": [
+      2400,
+      2400
+    ],
+    "image": "/assets/instagram/731573234.webp",
+    "thumbnail": "/assets/instagram/731573234-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "731808412",
+    "source": "https://www.instagram.com/desde.terra/p/DaQ8OhnHIQu/",
+    "originalName": "731808412_18138512368512277_5697497765241980920_n.jpg",
+    "originalSize": [
+      3456,
+      3456
+    ],
+    "size": [
+      2400,
+      2400
+    ],
+    "image": "/assets/instagram/731808412.webp",
+    "thumbnail": "/assets/instagram/731808412-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "734591655",
+    "source": "https://www.instagram.com/desde.terra/p/Dad78KbHHcN/",
+    "originalName": "734591655_18140096251512277_4214251522797176098_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/734591655.webp",
+    "thumbnail": "/assets/instagram/734591655-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "735504594",
+    "source": "https://www.instagram.com/desde.terra/p/Dad78KbHHcN/",
+    "originalName": "735504594_18140096296512277_1514848733074523207_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/735504594.webp",
+    "thumbnail": "/assets/instagram/735504594-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "736715184",
+    "source": "https://www.instagram.com/desde.terra/p/Dad78KbHHcN/",
+    "originalName": "736715184_18140096290512277_7362597302827851224_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/736715184.webp",
+    "thumbnail": "/assets/instagram/736715184-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "740131125",
+    "source": "https://www.instagram.com/desde.terra/p/Dad78KbHHcN/",
+    "originalName": "740131125_18140096269512277_7726825160155448752_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/740131125.webp",
+    "thumbnail": "/assets/instagram/740131125-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "741428302",
+    "source": "https://www.instagram.com/desde.terra/p/Dad78KbHHcN/",
+    "originalName": "741428302_18140096308512277_8149899640132580514_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/741428302.webp",
+    "thumbnail": "/assets/instagram/741428302-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "741556171",
+    "source": "https://www.instagram.com/desde.terra/p/Dad78KbHHcN/",
+    "originalName": "741556171_18140096293512277_1064053147665093084_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/741556171.webp",
+    "thumbnail": "/assets/instagram/741556171-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "741613669",
+    "source": "https://www.instagram.com/desde.terra/p/Dad78KbHHcN/",
+    "originalName": "741613669_18140096242512277_1202314070590543748_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/741613669.webp",
+    "thumbnail": "/assets/instagram/741613669-small.webp",
+    "alt": "Photo by TÃ‰RRA on July 06, 2026.",
+    "cover": true,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "757455071",
+    "source": "https://www.instagram.com/desde.terra/p/DbWaKGtHPJV/",
+    "originalName": "757455071_18146471602512277_8018400080404269632_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/757455071.webp",
+    "thumbnail": "/assets/instagram/757455071-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "757563389",
+    "source": "https://www.instagram.com/desde.terra/p/DbWaKGtHPJV/",
+    "originalName": "757563389_18146471644512277_3487237314383634709_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/757563389.webp",
+    "thumbnail": "/assets/instagram/757563389-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "758193057",
+    "source": "https://www.instagram.com/desde.terra/p/DbWaKGtHPJV/",
+    "originalName": "758193057_18146471593512277_5695230567381429979_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/758193057.webp",
+    "thumbnail": "/assets/instagram/758193057-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "758427188",
+    "source": "https://www.instagram.com/desde.terra/p/DbWaKGtHPJV/",
+    "originalName": "758427188_18146471626512277_4224575855418174964_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/758427188.webp",
+    "thumbnail": "/assets/instagram/758427188-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "758552566",
+    "source": "https://www.instagram.com/desde.terra/reel/DbUBeV5xsqr/",
+    "originalName": "758552566_18146413198512277_7342539336406750459_n.jpg",
+    "originalSize": [
+      360,
+      640
+    ],
+    "size": [
+      1080,
+      1920
+    ],
+    "image": "/assets/instagram/758552566.webp",
+    "thumbnail": "/assets/instagram/758552566-small.webp",
+    "alt": "Video by TÃ‰RRA on July 27, 2026. May be an image of bamboo.",
+    "cover": true,
+    "thumbnailWidth": 506
+  },
+  {
+    "id": "758564263",
+    "source": "https://www.instagram.com/desde.terra/p/DbWaKGtHPJV/",
+    "originalName": "758564263_18146471647512277_104938111916524243_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/758564263.webp",
+    "thumbnail": "/assets/instagram/758564263-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "758572777",
+    "source": "https://www.instagram.com/desde.terra/p/DbWaKGtHPJV/",
+    "originalName": "758572777_18146471611512277_6352092224066671889_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/758572777.webp",
+    "thumbnail": "/assets/instagram/758572777-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "758617624",
+    "source": "https://www.instagram.com/desde.terra/p/DbWaKGtHPJV/",
+    "originalName": "758617624_18146471629512277_6578549784651216214_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/758617624.webp",
+    "thumbnail": "/assets/instagram/758617624-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "759094048",
+    "source": "https://www.instagram.com/desde.terra/p/DbWaKGtHPJV/",
+    "originalName": "759094048_18146471584512277_2544398445574802905_n.jpg",
+    "originalSize": [
+      512,
+      640
+    ],
+    "size": [
+      1536,
+      1920
+    ],
+    "image": "/assets/instagram/759094048.webp",
+    "thumbnail": "/assets/instagram/759094048-small.webp",
+    "alt": "Photo by TÃ‰RRA on July 28, 2026.",
+    "cover": true,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "759823631",
+    "source": "https://www.instagram.com/desde.terra/p/DbeCMwJHCRU/",
+    "originalName": "759823631_18147164068512277_8358043382549474082_n.jpg",
+    "originalSize": [
+      3024,
+      4028
+    ],
+    "size": [
+      1802,
+      2400
+    ],
+    "image": "/assets/instagram/759823631.webp",
+    "thumbnail": "/assets/instagram/759823631-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 676
+  },
+  {
+    "id": "759849568",
+    "source": "https://www.instagram.com/desde.terra/p/DbeCMwJHCRU/",
+    "originalName": "759849568_18147164071512277_5100026706317630104_n.jpg",
+    "originalSize": [
+      3024,
+      4032
+    ],
+    "size": [
+      1800,
+      2400
+    ],
+    "image": "/assets/instagram/759849568.webp",
+    "thumbnail": "/assets/instagram/759849568-small.webp",
+    "alt": "Photo by TÃ‰RRA on July 31, 2026.",
+    "cover": true,
+    "thumbnailWidth": 675
+  },
+  {
+    "id": "762629733",
+    "source": "https://www.instagram.com/desde.terra/p/DbjQfkBxVgw/",
+    "originalName": "762629733_18147677146512277_3390574469631602646_n.jpg",
+    "originalSize": [
+      2799,
+      3732
+    ],
+    "size": [
+      1800,
+      2400
+    ],
+    "image": "/assets/instagram/762629733.webp",
+    "thumbnail": "/assets/instagram/762629733-small.webp",
+    "alt": "Photo by TÃ‰RRA on August 02, 2026.",
+    "cover": true,
+    "thumbnailWidth": 675
+  },
+  {
+    "id": "762867115",
+    "source": "https://www.instagram.com/desde.terra/p/Dbog5zUnP_j/",
+    "originalName": "762867115_18148147171512277_3738691801595246664_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/762867115.webp",
+    "thumbnail": "/assets/instagram/762867115-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "763355719",
+    "source": "https://www.instagram.com/desde.terra/reel/DbhKgb8RJJc/",
+    "originalName": "763355719_18147446713512277_8565157520681283284_n.jpg",
+    "originalSize": [
+      360,
+      640
+    ],
+    "size": [
+      1080,
+      1920
+    ],
+    "image": "/assets/instagram/763355719.webp",
+    "thumbnail": "/assets/instagram/763355719-small.webp",
+    "alt": "Video by TÃ‰RRA on August 01, 2026. May be an image of algae, tea, teacup and juice.",
+    "cover": true,
+    "thumbnailWidth": 506
+  },
+  {
+    "id": "764440047",
+    "source": "https://www.instagram.com/desde.terra/p/Dbog5zUnP_j/",
+    "originalName": "764440047_18148147138512277_8344640166774364915_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/764440047.webp",
+    "thumbnail": "/assets/instagram/764440047-small.webp",
+    "alt": "Photo by TÃ‰RRA on August 04, 2026.",
+    "cover": true,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "764476235",
+    "source": "https://www.instagram.com/desde.terra/p/Dbog5zUnP_j/",
+    "originalName": "764476235_18148147198512277_149161288884168969_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/764476235.webp",
+    "thumbnail": "/assets/instagram/764476235-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "765059457",
+    "source": "https://www.instagram.com/desde.terra/p/Dbog5zUnP_j/",
+    "originalName": "765059457_18148147180512277_6088278659854367097_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/765059457.webp",
+    "thumbnail": "/assets/instagram/765059457-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "765671233",
+    "source": "https://www.instagram.com/desde.terra/p/Dbog5zUnP_j/",
+    "originalName": "765671233_18148147207512277_5975938255598640058_n.jpg",
+    "originalSize": [
+      1638,
+      2047
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/765671233.webp",
+    "thumbnail": "/assets/instagram/765671233-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "765958245",
+    "source": "https://www.instagram.com/desde.terra/p/Dbog5zUnP_j/",
+    "originalName": "765958245_18148147162512277_4214509035066222126_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/765958245.webp",
+    "thumbnail": "/assets/instagram/765958245-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "766241348",
+    "source": "https://www.instagram.com/desde.terra/p/Dbog5zUnP_j/",
+    "originalName": "766241348_18148147189512277_1103162978998124511_n.jpg",
+    "originalSize": [
+      2160,
+      2700
+    ],
+    "size": [
+      1920,
+      2400
+    ],
+    "image": "/assets/instagram/766241348.webp",
+    "thumbnail": "/assets/instagram/766241348-small.webp",
+    "alt": "Imagen publicada por TÉRRA en Instagram",
+    "cover": false,
+    "thumbnailWidth": 700
+  },
+  {
+    "id": "788162700",
+    "source": "https://www.instagram.com/desde.terra/reel/DchVIUbxlDI/",
+    "originalName": "788162700_18153163921512277_8158560983918824961_n.jpg",
+    "originalSize": [
+      360,
+      640
+    ],
+    "size": [
+      1080,
+      1920
+    ],
+    "image": "/assets/instagram/788162700.webp",
+    "thumbnail": "/assets/instagram/788162700-small.webp",
+    "alt": "Video by TÃ‰RRA on August 26, 2026. May be an image of bamboo, tree and text.",
+    "cover": true,
+    "thumbnailWidth": 506
+  },
+  {
+    "id": "819130447",
+    "source": "https://www.instagram.com/desde.terra/p/Ddmz8sHP6qa/",
+    "originalName": "819130447_18158429893512277_1893561746878112880_n.jpg",
+    "originalSize": [
+      2799,
+      3732
+    ],
+    "size": [
+      1800,
+      2400
+    ],
+    "image": "/assets/instagram/819130447.webp",
+    "thumbnail": "/assets/instagram/819130447-small.webp",
+    "alt": "Photo by TÃ‰RRA on September 22, 2026. May be an image of tea, coffee cup, algae, juice, teacup, herb and text.",
+    "cover": true,
+    "thumbnailWidth": 675
+  },
+  {
+    "id": "840034046",
+    "source": "https://www.instagram.com/desde.terra/reel/DeP6c8ERt9a/",
+    "originalName": "840034046_18161439229512277_2733967666026428_n.jpg",
+    "originalSize": [
+      360,
+      640
+    ],
+    "size": [
+      1080,
+      1920
+    ],
+    "image": "/assets/instagram/840034046.webp",
+    "thumbnail": "/assets/instagram/840034046-small.webp",
+    "alt": "Video by TÃ‰RRA on October 08, 2026. May be an image of coffee cup, herb and text.",
+    "cover": true,
+    "thumbnailWidth": 506
+  }
+];

@@ -2,9 +2,9 @@ import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {createPanel,createGusset,createSeal,createTop,pouchPoint} from './doypack.js';
 
-export function createPouch(container, labelUrl='/assets/label-hd.png'){
+export function createPouch(container, labelUrl='/assets/instagram/etiqueta-original.webp'){
  let renderer;
- try{renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});}catch{container.innerHTML='<img class="fallback" src="/assets/presencia.jpg" alt="Empaque Presencia"><p>Tu dispositivo no pudo iniciar el visor 3D. Te mostramos el empaque original.</p>';return null;}
+ try{renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});}catch{container.innerHTML='<img class="fallback" src="/assets/instagram/759849568.webp" alt="Empaque Presencia"><p>Tu dispositivo no pudo iniciar el visor 3D. Te mostramos el empaque original.</p>';return null;}
  renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.setClearColor(0,0);container.append(renderer.domElement);
  renderer.domElement.setAttribute('aria-label','Modelo 3D del pouch Presencia. Arrastrá para girar y usá la rueda o dos dedos para acercar.');
  const scene=new THREE.Scene();const camera=new THREE.PerspectiveCamera(33,1,.1,100);camera.position.set(0,.15,8.1);

@@ -26,7 +26,7 @@ La compilación estática se genera en `dist/`. Se puede publicar en Sites, Netl
 
 ## Modelo 3D y fidelidad
 
-La etiqueta frontal usa una reconstrucción ImageGen de 1024 × 1536 px basada en las dos referencias de etiqueta y logo proporcionadas. Conserva la hoja, la composición y los textos; es una reconstrucción visual, no el arte de imprenta original. El pouch es una malla 3D con dos caras, abombado, cierre, costuras y base. Se gira con mouse/táctil, se acerca con rueda/pinch o botones, y se restablece la cámara. El render pausa fuera de pantalla y respeta movimiento reducido. Si WebGL no inicia se muestra la foto con aviso.
+La etiqueta frontal se extrae y rectifica de la fotografía original de Instagram (3024 × 4032 px), manteniendo su diseño real. No usa imágenes generadas. La textura rectificada mide 1024 × 1536 px. El pouch es una malla 3D con dos caras, abombado, cierre, costuras y base. Se gira con mouse/táctil, se acerca con rueda/pinch o botones, y se restablece la cámara. El render pausa fuera de pantalla y respeta movimiento reducido. Si WebGL no inicia se muestra la foto con aviso.
 
 La textura está limitada por la resolución, perspectiva e iluminación de la foto recibida: no sustituye un arte de imprenta. El dorso es ilustrativo sin texto comercial inventado. Para fidelidad de producción: aportar etiqueta en alta resolución, dorso, medidas del pouch y, si existe, archivo GLB oficial.
 
@@ -36,4 +36,4 @@ La bolsa se conserva en localStorage. El checkout valida datos de ejemplo en el 
 
 Antes de venta real: confirmar origen, ingredientes, stock y políticas; conectar backend de pedidos e inventario, pasarela de pagos y logística; agregar términos y privacidad y verificar accesibilidad y compatibilidad en dispositivos reales. Agregar nuevos productos al catálogo y definir imágenes y modelos correspondientes.
 
-Tipografías Google Fonts con alternativas locales del sistema. Fotografías tomadas de las referencias proporcionadas, sin fotografías de stock. Instagram no pudo consultarse en vivo; identidad basada en las capturas adjuntas.
+Tipografías Google Fonts con alternativas locales del sistema. Fotografías descargadas directamente del Instagram público de @desde.terra. Se recopilaron 39 imágenes: los slides de los carruseles, las publicaciones fotográficas y las portadas de los reels de las 14 publicaciones disponibles. Todas se escalaron con Lanczos y un enfoque suave, sin alteraciones generativas. Se recuperaron originales de hasta 3024 × 4032 px; las portadas de reels parten de las versiones públicas de 640 px. El escalado no recupera detalle que no exista en el archivo original. La galería conserva cada diseño sin recortarlo y enlaza a su publicación. Las fuentes y dimensiones se registran en `public/assets/instagram/sources.json`.
