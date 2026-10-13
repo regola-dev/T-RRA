@@ -5,3 +5,5 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 
 .wordmark img{width:112px;height:45px;object-fit:contain}.giant-logo img{width:90%;height:auto;margin:0 auto;max-height:320px;object-fit:fill}.giant-logo{margin:35px 0 15px}@media(max-width:640px){.wordmark img{width:92px;height:37px}.giant-logo img{max-height:140px}.giant-logo{margin:25px 0 10px}}
+
+.nature{background-image:url('/assets/leaves.jpg')}
