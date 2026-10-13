@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 import {createPanel,createGusset,createSeal,createTop,pouchPoint} from './doypack.js';
 
-export function createPouch(container){
+export function createPouch(container, labelUrl='/assets/label-hd.png'){
  let renderer;
  try{renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});}catch{container.innerHTML='<img class="fallback" src="/assets/presencia.jpg" alt="Empaque Presencia"><p>Tu dispositivo no pudo iniciar el visor 3D. Te mostramos el empaque original.</p>';return null;}
  renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.setClearColor(0,0);container.append(renderer.domElement);
@@ -19,8 +19,8 @@ export function createPouch(container){
   const points=Array.from({length:65},(_,i)=>{const p=pouchPoint((i/64*2-1)*.965,v,face);p.z+=(face?1:-1)*.006;return p;});
   const track=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(points),64,.007,6,false),paper);pouch.add(track);
  }
- // The original label is mapped directly onto the flexible front, so it follows its folds.
- new THREE.ImageLoader().load('/assets/label.jpg',image=>{const canvas=document.createElement('canvas');canvas.width=1024;canvas.height=1536;const ctx=canvas.getContext('2d');ctx.fillStyle='#ece9de';ctx.fillRect(0,0,1024,1536);ctx.drawImage(image,150,375,724,1065);const texture=new THREE.CanvasTexture(canvas);texture.colorSpace=THREE.SRGBColorSpace;texture.anisotropy=renderer.capabilities.getMaxAnisotropy();frontMaterial.color.set(0xffffff);frontMaterial.map=texture;frontMaterial.needsUpdate=true;});
+ // The high-resolution label is mapped directly onto the flexible front, so it follows its folds.
+ new THREE.ImageLoader().load(labelUrl,image=>{const canvas=document.createElement('canvas');const scale=renderer.capabilities.maxTextureSize>=3072?2:1;canvas.width=1024*scale;canvas.height=1536*scale;const ctx=canvas.getContext('2d');ctx.scale(scale,scale);ctx.fillStyle='#ece9de';ctx.fillRect(0,0,1024,1536);ctx.drawImage(image,150,375,724,1065);const texture=new THREE.CanvasTexture(canvas);texture.colorSpace=THREE.SRGBColorSpace;texture.anisotropy=renderer.capabilities.getMaxAnisotropy();frontMaterial.color.set(0xffffff);frontMaterial.map=texture;frontMaterial.needsUpdate=true;});
  const clock=new THREE.Clock();let interacting=false;controls.addEventListener('start',()=>{interacting=true;controls.autoRotate=false;});
  const observer=new ResizeObserver(()=>{const {width:w,height:h}=container.getBoundingClientRect();renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();});observer.observe(container);
  let visible=true;const visibility=new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;});visibility.observe(container);

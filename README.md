@@ -26,7 +26,7 @@ La compilación estática se genera en `dist/`. Se puede publicar en Sites, Netl
 
 ## Modelo 3D y fidelidad
 
-La etiqueta frontal usa el recorte de la fotografía original, conservando logo y composición. El pouch es una malla 3D con dos caras, abombado, cierre, costuras y base. Se gira con mouse/táctil, se acerca con rueda/pinch o botones, y se restablece la cámara. El render pausa fuera de pantalla y respeta movimiento reducido. Si WebGL no inicia se muestra la foto con aviso.
+La etiqueta frontal usa una reconstrucción ImageGen de 1024 × 1536 px basada en las dos referencias de etiqueta y logo proporcionadas. Conserva la hoja, la composición y los textos; es una reconstrucción visual, no el arte de imprenta original. El pouch es una malla 3D con dos caras, abombado, cierre, costuras y base. Se gira con mouse/táctil, se acerca con rueda/pinch o botones, y se restablece la cámara. El render pausa fuera de pantalla y respeta movimiento reducido. Si WebGL no inicia se muestra la foto con aviso.
 
 La textura está limitada por la resolución, perspectiva e iluminación de la foto recibida: no sustituye un arte de imprenta. El dorso es ilustrativo sin texto comercial inventado. Para fidelidad de producción: aportar etiqueta en alta resolución, dorso, medidas del pouch y, si existe, archivo GLB oficial.
 
