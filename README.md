@@ -1,39 +1,48 @@
-# TÉRRA — Presencia
+# TÉRRA — sitio editorial y tienda botánica
 
-Primera versión de ecommerce responsive, en español, con Vite y Three.js. El catálogo está en `src/products.js`. Precio confirmado: $15.000 ARS por Presencia 50 g. Venta exclusiva en Argentina y envíos a todo el país, con costo a confirmar según destino; no hay servidor de pedidos ni pasarela de pagos.
+Implementación sobre la arquitectura existente: Vite + JavaScript, sin backend ni pasarela. Se conservan los archivos del visor Three.js como recurso disponible, sin cargarlo en la portada. Rutas: inicio, bebidas, fichas de PRESENCIA y PULSO, Universo, Rituales, Historias, FAQ, contacto y carrito.
 
 ## Ejecutar
 
-Requisitos: Node.js 22.12+ y pnpm.
+Node 22.12 o superior y pnpm:
 
-```sh
-pnpm install
-pnpm dev
-pnpm test
-pnpm build
-pnpm preview
-```
+    pnpm install --frozen-lockfile
+    pnpm dev
+    pnpm test
+    pnpm build
+    pnpm preview
 
-La compilación estática se genera en `dist/`. Se puede publicar en Sites, Netlify, Cloudflare Pages o Vercel con comando `pnpm build` y directorio `dist`.
+## Editar contenido y habilitar pedidos
 
-## Estructura
+`src/products.js` centraliza catálogo y `commerce`: productos, precios, stock, ingredientes, preparación, conservación, imágenes, Instagram, WhatsApp, email, envíos, medios de pago, condiciones y URL pública. PRESENCIA tiene precio PROVISIONAL de ARS 15.000; PULSO no tiene precio. El stock de ambos está pendiente. No se inventaron disponibilidad ni datos comerciales.
 
-- `src/products.js`: catálogo y formato de precios.
-- `src/cart.js`: cantidades, totales y restauración segura.
-- `src/pouch.js`: geometría volumétrica del pouch, materiales, luces y controles reales Three.js.
-- `src/main.js`: tienda, bolsa y checkout local.
-- `public/assets/`: fotografías y recortes derivados de las dos referencias adjuntas.
+Para habilitar un producto, confirmar un precio entero en ARS, poner `provisionalPrice:false` y un `stock` entero positivo. El carrito limita cantidades por stock y a 20 unidades. Persistencia local sin datos personales. Esto no reserva inventario en un servidor: la dueña debe confirmar cada consulta.
 
-## Modelo 3D y fidelidad
+Para habilitar envío de consultas de pedido por WhatsApp:
 
-La etiqueta frontal se extrae y rectifica de la fotografía original de Instagram (3024 × 4032 px), manteniendo su diseño real. No usa imágenes generadas. La textura rectificada mide 1024 × 1536 px. El pouch es una malla 3D con dos caras, abombado, cierre, costuras y base. Se gira con mouse/táctil, se acerca con rueda/pinch o botones, y se restablece la cámara. El render pausa fuera de pantalla y respeta movimiento reducido. Si WebGL no inicia se muestra la foto con aviso.
+- `whatsapp`: número real internacional solo con dígitos (10 a 15), sin inventarlo.
+- `payments`: nombres de medios de pago reales disponibles.
+- `shipping`: opciones `{ id, label, cost }`, con importe entero en ARS no negativo. Definir cobertura en cada descripción y ofrecer solo zonas atendidas.
+- `policies`: condiciones comerciales confirmadas, incluyendo cobertura, plazos, cambios y devoluciones.
 
-La textura está limitada por la resolución, perspectiva e iluminación de la foto recibida: no sustituye un arte de imprenta. El dorso es ilustrativo sin texto comercial inventado. Para fidelidad de producción: aportar etiqueta en alta resolución, dorso, medidas del pouch y, si existe, archivo GLB oficial.
+Se muestra subtotal, envío y total antes de enviar. Se requieren nombre, provincia, localidad, dirección y código postal argentino. El envío abre un mensaje de WhatsApp; no confirma pedido, no cobra y no vacía el carrito. Los datos no se guardan en localStorage. El cliente debe enviar el mensaje y TÉRRA confirmar stock, entrega y pago. Los importes son una consulta editable por el cliente; nunca utilizarlos como comprobante de pago.
 
-## Alcance y publicación comercial
+Completar datos fiscales, domicilio comercial, términos y privacidad antes de publicar para venta. Verificar obligaciones aplicables con asesoramiento local. No hay pagos online, webhooks ni backend de pedidos. Integrar Mercado Pago requiere una futura implementación del servidor, validación del catálogo en servidor y verificación oficial de notificaciones; no agregar claves al frontend.
 
-La bolsa se conserva en localStorage. El checkout valida datos de ejemplo en el navegador, muestra confirmación y vacía la bolsa: no envía ni conserva los datos del formulario, no crea pedidos y no solicita tarjetas.
+## Imágenes y diseño
 
-Antes de venta real: confirmar origen, ingredientes, stock y políticas; conectar backend de pedidos e inventario, pasarela de pagos y logística; agregar términos y privacidad y verificar accesibilidad y compatibilidad en dispositivos reales. Agregar nuevos productos al catálogo y definir imágenes y modelos correspondientes.
+Adjuntos originales en `assets-source/`, fuera del directorio público. Versiones WebP optimizadas en `public/assets/brand/`. `presencia.jpg` y `pulso.jpg` son las imágenes recibidas. Logo sobre hoja para portada y universo. `terra-negro.png` es un logo blanco con transparencia; su copia recortada sin cambiar el diseño se usa en navegación. Las fotos previas de Instagram permanecen disponibles.
 
-Tipografías Google Fonts con alternativas locales del sistema. Fotografías descargadas directamente del Instagram público de @desde.terra. Se recopilaron 39 imágenes: los slides de los carruseles, las publicaciones fotográficas y las portadas de los reels de las 14 publicaciones disponibles. Todas se escalaron con Lanczos y un enfoque suave, sin alteraciones generativas. Se recuperaron originales de hasta 3024 × 4032 px; las portadas de reels parten de las versiones públicas de 640 px. El escalado no recupera detalle que no exista en el archivo original. La galería conserva cada diseño sin recortarlo y enlaza a su publicación. Las fuentes y dimensiones se registran en `public/assets/instagram/sources.json`.
+Sustituir `image` de cada producto en el catálogo y las imágenes editoriales de `src/main.js`. Paleta en `src/editorial.css`, estilos existentes en `src/style.css`. Fuentes Google Fonts con fallback Georgia/Arial; se puede servir WOFF2 local para eliminar esa petición externa. No hay trackers ni cookies de analítica.
+
+`src/articles.js` contiene el modelo editorial: slug, título, bajada, categoría, fecha opcional, portada, párrafos, fuentes y artículos relacionados. Agregar entradas allí amplía el listado y genera rutas sin rediseñar. Las historias históricas/botánicas no verificadas siguen pendientes. Se incluye una reflexión de marca útil, sin atribuir hechos científicos ni referencias inventadas. Preparación de matcha orientativa; hibiscus pendiente de validación específica.
+
+## SEO y despliegue
+
+`pnpm build` genera `dist`. El build emite HTML por ruta. Vercel usa URLs limpias; otros hostings pueden usar el fallback SPA incluido en `public/_redirects`. El build genera HTML con títulos, descripción y Open Graph propios para cada ruta, legibles sin ejecutar JavaScript. El contenido todavía se renderiza en cliente; para indexación completa del contenido incorporar prerender/SSR.
+
+Configurar `commerce.siteUrl` para canonical y sitemap; el build los genera cuando el dominio esté confirmado. No se inventó dominio. El robots inicial impide indexar hasta revisión comercial. No se agregaron ofertas estructuradas mientras precio y stock estén pendientes.
+
+Publicación: importar este repositorio en un hosting estático, comando `pnpm build`, salida `dist`, Node 22.12+. En Vercel usar la configuración incluida. No se requiere ninguna variable de entorno para esta versión. WhatsApp se configura como dato público, no como secreto. No hay servicios externos de pago configurados.
+
+Esta entrega no se publica automáticamente: requiere revisar datos pendientes y seleccionar el hosting/dominio para el repositorio existente.

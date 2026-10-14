@@ -1,3 +1,3 @@
-export function updateQuantity(cart,id,quantity){const next={...cart}; const q=Math.min(20,Math.max(0,Math.trunc(Number(quantity)||0))); if(q)next[id]=q;else delete next[id];return next;}
-export function total(cart,products){return products.reduce((sum,p)=>sum+p.price*(cart[p.id]||0),0);}
-export function restoreCart(value,products){try{const parsed=JSON.parse(value);return products.reduce((cart,p)=>updateQuantity(cart,p.id,parsed?.[p.id]),{});}catch{return {};}}
+export function updateQuantity(cart,id,quantity,max=20){const next={...cart};const limit=Math.min(20,Math.max(0,Number.isFinite(max)?Math.trunc(max):0));const value=Number(quantity);const q=Number.isFinite(value)?Math.min(limit,Math.max(0,Math.trunc(value))):0;if(q)next[id]=q;else delete next[id];return next;}
+export function total(cart,products){return products.reduce((sum,p)=>sum+(Number.isFinite(p.price)?p.price:0)*(cart[p.id]||0),0);}
+export function restoreCart(value,products){try{const parsed=JSON.parse(value);return products.reduce((cart,p)=>updateQuantity(cart,p.id,parsed?.[p.id],p.stock===undefined?20:(p.provisionalPrice||p.price===null?0:p.stock??0)),{});}catch{return {};}}
