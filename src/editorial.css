@@ -40,3 +40,6 @@
 @media print{.scroll-reveal{opacity:1;animation:none!important;transform:none!important}}
 
 html.wheel-gliding{scroll-behavior:auto!important}
+
+/* Slightly shorter pouch photos on the home page only. */
+.home-page .drink-card img{height:auto;aspect-ratio:2/2.7;object-fit:contain}
