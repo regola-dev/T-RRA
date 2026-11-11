@@ -28,3 +28,9 @@
 .ritual-editorial img{width:100%;height:480px;max-height:none;object-fit:contain}
 @media(max-width:700px){.drink-card img{height:auto}.product-photo{width:100%;height:420px}.opening-image img{height:380px}.ritual-editorial img{height:420px;max-height:none}}
 .drink-card.pulso .card-copy h2{color:var(--cream)}
+
+/* Scroll entrances are enabled only by JavaScript and run once per element. */
+.scroll-reveal{opacity:0;transform:translateY(18px);transition:opacity 1.1s ease,transform 1.1s cubic-bezier(.2,.65,.3,1)}
+.scroll-reveal.is-visible,.scroll-reveal:focus-within{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.scroll-reveal{opacity:1;transform:none;transition:none}}
+@media print{.scroll-reveal{opacity:1;transform:none}}
