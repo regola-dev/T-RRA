@@ -44,8 +44,8 @@ html.wheel-gliding{scroll-behavior:auto!important}
   grid-template-columns: repeat(2, minmax(0, 440px));
   justify-content: center;
 }
-.drink-card.presencia { background: #164333; color: var(--cream); }
-.drink-card.pulso { background: rgb(190 8 74 / 50%); color: #391725; }
+.drink-card.presencia { background: rgb(22 67 51 / 10%); color: var(--forest); }
+.drink-card.pulso { background: rgb(190 8 74 / 10%); color: #391725; }
 .drink-card.pulso .card-copy :is(h2, .eyebrow) { color: inherit; }
 .drink-card img {
   width: 100%;
