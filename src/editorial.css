@@ -38,3 +38,5 @@
 .scroll-reveal:focus-within{opacity:1;animation:none!important}
 @media(prefers-reduced-motion:reduce){.scroll-reveal.is-visible{animation:terra-fade 1.1s ease var(--reveal-delay,0ms) both!important;transform:none!important}}
 @media print{.scroll-reveal{opacity:1;animation:none!important;transform:none!important}}
+
+html.wheel-gliding{scroll-behavior:auto!important}
