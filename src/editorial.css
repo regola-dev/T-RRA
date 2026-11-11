@@ -10,3 +10,11 @@
 .bag{gap:8px;min-height:44px}.cart-icon{display:block;flex-shrink:0}
 .universe-chapter .chapter-image img{height:auto;aspect-ratio:auto;object-fit:contain}.universe-chapter .chapter-image{align-self:center}
 @media(max-width:700px){.ui-decoration,.cart-icon,details summary>span{display:none!important}.bag{gap:6px}.button{justify-content:center}}
+
+/* Compact product photography, preserving the complete pouch image. */
+.drink-card img{height:clamp(280px,32vw,420px);aspect-ratio:auto;object-fit:contain}
+.product-photo{width:min(100%,320px);height:auto;aspect-ratio:2/3;justify-self:center}
+.product-photo img{object-fit:contain}
+.opening-image img{height:420px;object-fit:contain}
+.ritual-editorial img{max-height:480px;object-fit:contain}
+@media(max-width:700px){.drink-card img{height:340px}.product-photo{width:min(100%,240px)}.opening-image img{height:340px}.ritual-editorial img{max-height:360px}}
