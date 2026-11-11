@@ -42,4 +42,6 @@
 html.wheel-gliding{scroll-behavior:auto!important}
 
 /* Slightly shorter pouch photos on the home page only. */
-.home-page .drink-card img{height:auto;aspect-ratio:2/2.7;object-fit:contain}
+.home-page .drink-card>a{padding-top:28px}
+.home-page .drink-card img{width:100%;height:clamp(320px,58svh,540px);aspect-ratio:auto;object-fit:contain;margin-bottom:28px}
+@media(max-width:700px){.home-page .drink-card>a{padding-top:22px}.home-page .drink-card img{height:clamp(300px,54svh,440px);margin-bottom:22px}}
