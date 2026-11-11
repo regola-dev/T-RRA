@@ -30,8 +30,11 @@
 @media(max-width:700px){.drink-card img{height:auto}.product-photo{width:100%;height:auto;aspect-ratio:2/3}.product-photo img{position:static;height:auto;aspect-ratio:2/3}.opening-image img{height:380px}.ritual-editorial img{height:420px;max-height:none}}
 .drink-card.pulso .card-copy h2{color:var(--cream)}
 
-/* Scroll entrances are enabled only by JavaScript and run once per element. */
-.scroll-reveal{opacity:0;transform:translateY(18px);transition:opacity 1.1s ease,transform 1.1s cubic-bezier(.2,.65,.3,1)}
-.scroll-reveal.is-visible,.scroll-reveal:focus-within{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.scroll-reveal{opacity:1;transform:none;transition:none}}
-@media print{.scroll-reveal{opacity:1;transform:none}}
+/* Distinct, staggered entrances on load and scroll. */
+.scroll-reveal{opacity:0}
+.scroll-reveal.is-visible{opacity:1;animation:terra-arrive 1.25s cubic-bezier(.16,.75,.25,1) var(--reveal-delay,0ms) both}
+@keyframes terra-arrive{from{opacity:0;transform:translateY(60px) scale(.97)}to{opacity:1;transform:none}}
+@keyframes terra-fade{from{opacity:0}to{opacity:1}}
+.scroll-reveal:focus-within{opacity:1;animation:none!important}
+@media(prefers-reduced-motion:reduce){.scroll-reveal.is-visible{animation:terra-fade 1.1s ease var(--reveal-delay,0ms) both!important;transform:none!important}}
+@media print{.scroll-reveal{opacity:1;animation:none!important;transform:none!important}}
