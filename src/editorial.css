@@ -12,11 +12,9 @@
 @media(max-width:700px){.ui-decoration,.cart-icon,details summary>span{display:none!important}.bag{gap:6px}.button{justify-content:center}}
 
 /* Complete product photos on a continuous botanical backdrop. */
-.drink-card,.drink-card.pulso,.ritual-editorial,.ritual-editorial.pulso,.opening-image{background-color:#122b23;background-image:linear-gradient(110deg,rgba(8,25,18,.88),rgba(12,35,24,.92)),url('/assets/brand/bosque-helechos-hd.webp');background-size:cover;background-position:center;color:var(--cream)}
-.drink-card.pulso,.ritual-editorial.pulso{background-color:#122b23}
-.drink-card img{width:100%;height:auto;aspect-ratio:2/3;object-fit:contain}
+.ritual-editorial,.ritual-editorial.pulso,.opening-image{background-color:#122b23;background-image:linear-gradient(110deg,rgba(8,25,18,.88),rgba(12,35,24,.92)),url('/assets/brand/bosque-helechos-hd.webp');background-size:cover;background-position:center;color:var(--cream)}
+.ritual-editorial.pulso{background-color:#122b23}
 .card-copy{background:transparent}
-.drink-card .card-copy p,.drink-card .card-copy small{color:#d4ddca}
 .product-grid{background:var(--cream);color:var(--forest);align-items:stretch}
 .product-photo{width:100%;height:auto;min-height:0;aspect-ratio:auto;justify-self:stretch;background:transparent;overflow:visible;position:relative}
 .product-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center top;transform:none}
@@ -41,7 +39,21 @@
 
 html.wheel-gliding{scroll-behavior:auto!important}
 
-/* Slightly shorter pouch photos on the home page only. */
-.home-page .drink-card>a{padding-top:42px}
-.home-page .drink-card img{width:100%;height:clamp(280px,46svh,440px);aspect-ratio:auto;object-fit:contain;margin-bottom:42px}
-@media(max-width:700px){.home-page .drink-card>a{padding-top:32px}.home-page .drink-card img{height:clamp(260px,44svh,360px);margin-bottom:32px}}
+/* Shared product cards on Inicio and Bebidas. */
+.drinks {
+  grid-template-columns: repeat(2, minmax(0, 440px));
+  justify-content: center;
+}
+.drink-card.presencia { background: #164333; color: var(--cream); }
+.drink-card.pulso { background: #e99ab6; color: #391725; }
+.drink-card.pulso .card-copy :is(h2, .eyebrow) { color: inherit; }
+.drink-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 55%;
+}
+@media (max-width: 700px) {
+  .drinks { grid-template-columns: minmax(0, 440px); }
+}
