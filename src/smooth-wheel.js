@@ -21,7 +21,8 @@ export function initSmoothWheel() {
       stop();
       return;
     }
-    const next = current + distance * (1 - Math.exp(-elapsed / 125));
+    const step = distance * (1 - Math.exp(-elapsed / 125));
+    const next = current + (Math.abs(step) < 1 ? Math.sign(distance) : step);
     window.scrollTo({top: next, behavior: 'instant'});
     frame = requestAnimationFrame(tick);
   };
